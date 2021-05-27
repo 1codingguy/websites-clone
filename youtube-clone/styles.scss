@@ -1,0 +1,126 @@
+$font-default: Arial, Helvetica, sans-serif;
+
+// reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-default;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav__left {
+  // doesn't grow in size under the main nav tag
+  flex-grow: 0;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  .menu-icon {
+    padding: 0.5rem;
+  }
+  .icon-youtube {
+    width: 90px;
+    height: 20px;
+    margin: auto 1rem;
+    cursor: pointer;
+  }
+}
+
+.nav__middle {
+  // grow in size with page under main nav tag
+  flex-grow: 1;
+  // width: 100%;
+  margin-right: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon-mic {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.nav__search-box {
+  flex-grow: 1;
+  margin-left: 2rem;
+
+  display: flex;
+
+  input {
+    border: 0.2px solid lightgray;
+    padding: 6px 8px;
+    border-right: transparent;
+    height: 28px;
+    // if there isn't width: 100%, button will grow as well
+    width: 100%;
+
+    &::placeholder {
+      font-family: $font-default;
+      color: gray;
+      font-size: 1rem;
+    }
+  }
+
+  button {
+    border: 0.2px solid lightgray;
+    border-left: transparent;
+    width: 52px;
+    height: 28px;
+    padding: 1px 6px;
+    display: grid;
+    place-items: center;
+    flex-grow: 1;
+    cursor: pointer;
+
+    .icon-search {
+      color: gray;
+      font-size: 20px;
+    }
+  }
+}
+
+.nav__right {
+  // doesn't grow in size under the main nav tag
+  flex-grow: 0;
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  i {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+}

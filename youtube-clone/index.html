@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+
+    <!-- material-icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>YouTube-clone</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav__left">
+        <a href="#">
+          <i class="material-icons menu-icon">menu</i>
+        </a>
+        <img src="./icons/logo.png" alt="youtube icon" class="icon-youtube tooltipped" data-position="bottom" data-tooltip="YouTube Home" />
+      </div>
+
+      <div class="nav__middle">
+        <div class="nav__search-box">
+          <input class="browser-default" type="text" placeholder="Search" />
+          <button class="btn-search">
+            <i class="material-icons icon-search">search</i>
+          </button>
+        </div>
+
+        <span><i class="material-icons icon-mic">mic</i></span>
+      </div>
+
+      <!-- no avatar for now -->
+      <div class="nav__right">
+        <i class="material-icons">video_call</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <img src="./icons/avatar.jpg" alt="avatar" class="avatar" />
+      </div>
+    </div>
+  </body>
+  <!-- materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+  <!-- apps.js -->
+  <script src="./apps.js"></script>
+</html>
