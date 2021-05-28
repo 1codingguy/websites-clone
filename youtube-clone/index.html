@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+    />
 
     <!-- material-icons -->
     <link
@@ -23,26 +26,79 @@
         <a href="#">
           <i class="material-icons menu-icon">menu</i>
         </a>
-        <img src="./icons/logo.png" alt="youtube icon" class="icon-youtube tooltipped" data-position="bottom" data-tooltip="YouTube Home" />
+
+        <a href="#" class="tooltip-icon-youtube" data-tooltip="YouTube Home">
+          <img src="./icons/logo.png" alt="youtube icon" class="icon-youtube" />
+        </a>
       </div>
 
       <div class="nav__middle">
-        <div class="nav__search-box">
+        <form class="nav__search-box">
           <input class="browser-default" type="text" placeholder="Search" />
           <button class="btn-search">
-            <i class="material-icons icon-search">search</i>
+            <i
+              class="material-icons icon-search tooltipped"
+              data-position="bottom"
+              data-tooltip="Search"
+              >search</i
+            >
           </button>
-        </div>
+        </form>
 
-        <span><i class="material-icons icon-mic">mic</i></span>
+        <span
+          ><i
+            class="material-icons icon-mic tooltipped"
+            data-position="bottom"
+            data-tooltip="Search with your voice"
+            >mic</i
+          ></span
+        >
       </div>
 
-      <!-- no avatar for now -->
       <div class="nav__right">
-        <i class="material-icons">video_call</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">notifications</i>
-        <img src="./icons/avatar.jpg" alt="avatar" class="avatar" />
+        <a href="#" class="icon-mic-right">
+          <i
+            class="material-icons tooltipped"
+            data-position="bottom"
+            data-tooltip="Search with your voice"
+            >mic</i
+          >
+        </a>
+        <a href="#" class="icon-search-right">
+          <i
+            class="material-icons tooltipped"
+            data-position="bottom"
+            data-tooltip="Search"
+            >search</i
+          >
+        </a>
+        <a href="#">
+          <i
+            class="material-icons tooltipped"
+            data-position="bottom"
+            data-tooltip="Create"
+            >video_call</i
+          >
+        </a>
+        <a href="#">
+          <i
+            class="material-icons tooltipped"
+            data-position="bottom"
+            data-tooltip="YouTube apps"
+            >apps</i
+          >
+        </a>
+        <a href="#">
+          <i
+            class="material-icons tooltipped"
+            data-position="bottom"
+            data-tooltip="Notifications"
+            >notifications</i
+          >
+        </a>
+        <a href="#">
+          <img src="./icons/avatar.jpg" alt="avatar" class="avatar" />
+        </a>
       </div>
     </div>
   </body>

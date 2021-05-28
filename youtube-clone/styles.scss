@@ -1,24 +1,5 @@
-$font-default: Arial, Helvetica, sans-serif;
-
-// reset
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: $font-default;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
+@import "./variables";
+@import "./global-settings";
 
 .nav {
   padding-left: 1rem;
@@ -41,11 +22,38 @@ a {
   .menu-icon {
     padding: 0.5rem;
   }
+
+  .tooltip-icon-youtube {
+    position: relative;
+    // to make the tooltip container same size as icon-youtube
+    // so as the margin
+    width: 80px;
+    height: 20px;
+    margin: auto 1rem;
+
+    &:hover::before {
+      position: absolute;
+      content: attr(data-tooltip);
+      // position of original one adjusted to the cursor position, not fixed
+      top: 100%;
+      left: 50%;
+
+      width: max-content;
+      background-color: white;
+      color: gray;
+      font-family: $font-default-2;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.4rem;
+      border: 0.5px solid black;
+    }
+  }
+
   .icon-youtube {
     width: 90px;
     height: 20px;
     margin: auto 1rem;
     cursor: pointer;
+    transform: translateX(-20px);
   }
 }
 
@@ -54,42 +62,53 @@ a {
   flex-grow: 1;
   // width: 100%;
   margin-right: 2rem;
-
   display: flex;
   align-items: center;
 }
 
 .icon-mic {
-  padding: 0.5rem;
-  cursor: pointer;
+  display: none;
+
+  @include mQ(660px) {
+    display: initial;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: $color-icons;
+  }
 }
 
 .nav__search-box {
-  flex-grow: 1;
-  margin-left: 2rem;
+  display: none;
 
-  display: flex;
+  @include mQ(660px) {
+    flex-grow: 1;
+    margin-left: 40px;
 
-  input {
-    border: 0.2px solid lightgray;
-    padding: 6px 8px;
-    border-right: transparent;
-    height: 28px;
-    // if there isn't width: 100%, button will grow as well
-    width: 100%;
+    display: flex;
 
-    &::placeholder {
-      font-family: $font-default;
-      color: gray;
-      font-size: 1rem;
+    input {
+      border: 0.2px solid lightgray;
+      padding: 1px 2px;
+      padding-left: 12px;
+      border-right: transparent;
+      height: 30px;
+      // if there isn't width: 100%, button will grow as well
+      width: 100%;
+
+      &::placeholder {
+        font-family: $font-default;
+        color: #909090;
+        font-size: 1rem;
+      }
     }
   }
 
   button {
     border: 0.2px solid lightgray;
-    border-left: transparent;
-    width: 52px;
-    height: 28px;
+    // border-left: transparent;
+    width: 72px;
+    height: 30px;
     padding: 1px 6px;
     display: grid;
     place-items: center;
@@ -110,10 +129,13 @@ a {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  // margin-left: 20px;
+  justify-content: space-between;
 
-  i {
+  a {
     padding: 0.5rem;
-    cursor: pointer;
+    color: $color-icons;
+    margin-right: 0.5rem;
   }
 
   .avatar {
@@ -121,6 +143,12 @@ a {
     height: 2rem;
     border-radius: 50%;
     margin: 0.5rem;
-    cursor: pointer;
+  }
+
+  @include mQ(660px) {
+    .icon-search-right,
+    .icon-mic-right {
+      display: none;
+    }
   }
 }
