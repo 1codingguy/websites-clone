@@ -1,0 +1,40 @@
+@import "./variables";
+
+.sidebar {
+  display: none;
+
+  @include mQ($breakpoint-sidebar) {
+    width: 72px;
+    // position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    &__container {
+      width: 100%;
+      // height: 100%;
+      padding-top: 16px;
+      padding-bottom: 14px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+
+    &__icon {
+      color: $color-icons-dark;
+    }
+
+    &__active {
+      color: red;
+    }
+
+    p {
+      font-size: 10px;
+      font-family: $font-roboto;
+    }
+  }
+}

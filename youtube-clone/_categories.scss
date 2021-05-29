@@ -1,0 +1,44 @@
+@import "./variables";
+
+.categories {
+  display: flex;
+  align-items: center;
+  // justify-content: space-evenly;
+  height: 56px;
+  border-bottom: 1px solid lightgray;
+  padding-left: 1.5rem;
+  overflow: hidden;
+
+  @include mQ($breakpoint-sidebar) {
+    padding-left: 4rem;
+  }
+
+  &-tag {
+    border: 1px solid lightgray;
+    background-color: #f2f2f2;
+    color: #4f4f4f;
+    border-radius: 90000px;
+    margin: 12px 12px 12px 1px;
+    padding: 0.3rem 0.8rem;
+    font-size: 14px;
+    font-family: $font-roboto;
+    word-wrap: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .active {
+    background-color: $color-icons-dark;
+    color: white;
+    border-color: #eee;
+
+    &:hover {
+      background-color: $color-icons-light;
+    }
+  }
+}

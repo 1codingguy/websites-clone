@@ -15,92 +15,149 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- Roboto font from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <!-- css style sheet -->
     <link rel="stylesheet" href="./styles.css" />
 
     <title>YouTube-clone</title>
   </head>
   <body>
-    <div class="nav">
-      <div class="nav__left">
-        <a href="#">
-          <i class="material-icons menu-icon">menu</i>
-        </a>
+    <header>
+      <div class="nav">
+        <div class="nav__left">
+          <a href="#">
+            <i class="material-icons menu-icon">menu</i>
+          </a>
 
-        <a href="#" class="tooltip-icon-youtube" data-tooltip="YouTube Home">
-          <img src="./icons/logo.png" alt="youtube icon" class="icon-youtube" />
-        </a>
-      </div>
+          <a href="#" class="tooltip-icon-youtube" data-tooltip="YouTube Home">
+            <img
+              src="./icons/logo.png"
+              alt="youtube icon"
+              class="icon-youtube"
+            />
+            <span>GB</span>
+          </a>
+        </div>
 
-      <div class="nav__middle">
-        <form class="nav__search-box">
-          <input class="browser-default" type="text" placeholder="Search" />
-          <button class="btn-search">
+        <div class="nav__middle">
+          <form class="nav__search-box">
+            <input class="browser-default" type="text" placeholder="Search" />
+            <button
+              class="btn-search tooltipped"
+              data-position="bottom"
+              data-tooltip="Search"
+            >
+              <i class="material-icons icon-search">search</i>
+            </button>
+          </form>
+
+          <span
+            ><i
+              class="material-icons icon-mic tooltipped"
+              data-position="bottom"
+              data-tooltip="Search with your voice"
+              >mic</i
+            ></span
+          >
+        </div>
+
+        <div class="nav__right">
+          <a href="#" class="icon-mic-right">
             <i
-              class="material-icons icon-search tooltipped"
+              class="material-icons tooltipped"
+              data-position="bottom"
+              data-tooltip="Search with your voice"
+              >mic</i
+            >
+          </a>
+          <a href="#" class="icon-search-right">
+            <i
+              class="material-icons tooltipped"
               data-position="bottom"
               data-tooltip="Search"
               >search</i
             >
-          </button>
-        </form>
-
-        <span
-          ><i
-            class="material-icons icon-mic tooltipped"
-            data-position="bottom"
-            data-tooltip="Search with your voice"
-            >mic</i
-          ></span
-        >
+          </a>
+          <a href="#">
+            <i
+              class="material-icons tooltipped"
+              data-position="bottom"
+              data-tooltip="Create"
+              >video_call</i
+            >
+          </a>
+          <a href="#">
+            <i
+              class="material-icons tooltipped"
+              data-position="bottom"
+              data-tooltip="YouTube apps"
+              >apps</i
+            >
+          </a>
+          <a href="#">
+            <i
+              class="material-icons tooltipped"
+              data-position="bottom"
+              data-tooltip="Notifications"
+              >notifications</i
+            >
+          </a>
+          <a href="#">
+            <img src="./icons/avatar.jpg" alt="avatar" class="avatar" />
+          </a>
+        </div>
       </div>
 
-      <div class="nav__right">
-        <a href="#" class="icon-mic-right">
-          <i
-            class="material-icons tooltipped"
-            data-position="bottom"
-            data-tooltip="Search with your voice"
-            >mic</i
-          >
-        </a>
-        <a href="#" class="icon-search-right">
-          <i
-            class="material-icons tooltipped"
-            data-position="bottom"
-            data-tooltip="Search"
-            >search</i
-          >
-        </a>
-        <a href="#">
-          <i
-            class="material-icons tooltipped"
-            data-position="bottom"
-            data-tooltip="Create"
-            >video_call</i
-          >
-        </a>
-        <a href="#">
-          <i
-            class="material-icons tooltipped"
-            data-position="bottom"
-            data-tooltip="YouTube apps"
-            >apps</i
-          >
-        </a>
-        <a href="#">
-          <i
-            class="material-icons tooltipped"
-            data-position="bottom"
-            data-tooltip="Notifications"
-            >notifications</i
-          >
-        </a>
-        <a href="#">
-          <img src="./icons/avatar.jpg" alt="avatar" class="avatar" />
-        </a>
+      <section class="categories">
+        <button class="categories-tag active">All</button>
+        <button class="categories-tag">Mixes</button>
+        <button class="categories-tag">Music</button>
+        <button class="categories-tag">Jazz</button>
+        <button class="categories-tag">Sonatas</button>
+        <button class="categories-tag">Latin Jazz</button>
+        <button class="categories-tag">Chill-out music</button>
+        <button class="categories-tag">Beethoven</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+        <button class="categories-tag">Other</button>
+      </section>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar__container sidebar__icon sidebar__active">
+        <i class="material-icons">home</i>
+        <p>Home</p>
       </div>
-    </div>
+      <div class="sidebar__container sidebar__icon">
+        <i class="material-icons">explore</i>
+        <p>Explore</p>
+      </div>
+      <div class="sidebar__container sidebar__icon">
+        <i class="material-icons">subscriptions</i>
+        <p>Subscriptions</p>
+      </div>
+      <div class="sidebar__container sidebar__icon">
+        <i class="material-icons">video_library</i>
+        <p>Library</p>
+      </div>
+    </aside>
   </body>
   <!-- materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>

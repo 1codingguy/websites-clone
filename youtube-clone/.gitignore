@@ -1,1 +1,2 @@
-note.txt
+# to exclude all the txt files
+*.txt
