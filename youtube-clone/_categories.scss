@@ -1,6 +1,8 @@
 @import "./variables";
 
 .categories {
+  z-index: 10;
+
   display: flex;
   align-items: center;
   // justify-content: space-evenly;
@@ -9,8 +11,8 @@
   padding-left: 1.5rem;
   overflow: hidden;
 
-  @include mQ($breakpoint-sidebar) {
-    padding-left: 4rem;
+  @include mQ($breakpoint-show-sidebar) {
+    padding-left: 5rem;
   }
 
   &-tag {
