@@ -12,6 +12,7 @@ $breakpoint-videos-3-col: 872px;
 $breakpoint-videos-4-col: 1128px;
 $breakpoint-videos-5-col: 1952px;
 $breakpoint-videos-6-col: 2288px;
+$breakpoint-categories-max-width: 1488px;
 
 @mixin mQ($pixel) {
   @media screen and (min-width: $pixel) {
