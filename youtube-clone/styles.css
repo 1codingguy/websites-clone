@@ -321,6 +321,13 @@ header {
   scrollbar-width: none;
 }
 
+.sidebar::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
 .sidebar__large-screen, .sidebar__hidden {
   display: none;
 }
