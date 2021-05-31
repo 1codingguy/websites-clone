@@ -29,129 +29,212 @@
   <body>
     <header>
       <div class="nav">
-        <div class="nav__left">
-          <a href="#">
-            <i class="material-icons menu-icon">menu</i>
-          </a>
+        <div class="nav__inner-container">
+          <div class="nav__left">
+            <a href="#">
+              <i class="material-icons menu-icon">menu</i>
+            </a>
 
-          <a href="#" class="tooltip-icon-youtube" data-tooltip="YouTube Home">
-            <img
-              src="./icons/logo.png"
-              alt="youtube icon"
-              class="icon-youtube"
-            />
-            <span>GB</span>
-          </a>
-        </div>
+            <a
+              href="#"
+              class="tooltip-icon-youtube"
+              data-tooltip="YouTube Home"
+            >
+              <img
+                src="./icons/logo.png"
+                alt="youtube icon"
+                class="icon-youtube"
+              />
+              <span>GB</span>
+            </a>
+          </div>
 
-        <div class="nav__middle">
-          <form class="nav__search-box">
-            <input class="browser-default" type="text" placeholder="Search" />
-            <button
-              class="btn-search tooltipped"
-              data-position="bottom"
-              data-tooltip="Search"
-            >
-              <i class="material-icons icon-search">search</i>
-            </button>
-          </form>
+          <div class="nav__middle">
+            <form class="nav__search-box">
+              <input class="browser-default" type="text" placeholder="Search" />
+              <button
+                class="btn-search tooltipped"
+                data-position="bottom"
+                data-tooltip="Search"
+              >
+                <i class="material-icons icon-search">search</i>
+              </button>
+            </form>
 
-          <span
-            ><i
-              class="material-icons icon-mic tooltipped"
-              data-position="bottom"
-              data-tooltip="Search with your voice"
-              >mic</i
-            ></span
-          >
-        </div>
+            <span
+              ><i
+                class="material-icons icon-mic tooltipped"
+                data-position="bottom"
+                data-tooltip="Search with your voice"
+                >mic</i
+              ></span
+            >
+          </div>
 
-        <div class="nav__right">
-          <a href="#" class="icon-mic-right">
-            <i
-              class="material-icons tooltipped"
-              data-position="bottom"
-              data-tooltip="Search with your voice"
-              >mic</i
-            >
-          </a>
-          <a href="#" class="icon-search-right">
-            <i
-              class="material-icons tooltipped"
-              data-position="bottom"
-              data-tooltip="Search"
-              >search</i
-            >
-          </a>
-          <a href="#">
-            <i
-              class="material-icons tooltipped"
-              data-position="bottom"
-              data-tooltip="Create"
-              >video_call</i
-            >
-          </a>
-          <a href="#">
-            <i
-              class="material-icons tooltipped"
-              data-position="bottom"
-              data-tooltip="YouTube apps"
-              >apps</i
-            >
-          </a>
-          <a href="#">
-            <i
-              class="material-icons tooltipped"
-              data-position="bottom"
-              data-tooltip="Notifications"
-              >notifications</i
-            >
-          </a>
-          <a href="#">
-            <img src="./icons/avatar.png" alt="avatar" class="avatar" />
-          </a>
+          <div class="nav__right">
+            <a href="#" class="icon-mic-right">
+              <i
+                class="material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Search with your voice"
+                >mic</i
+              >
+            </a>
+            <a href="#" class="icon-search-right">
+              <i
+                class="material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Search"
+                >search</i
+              >
+            </a>
+            <a href="#">
+              <i
+                class="material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Create"
+                >video_call</i
+              >
+            </a>
+            <a href="#">
+              <i
+                class="material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="YouTube apps"
+                >apps</i
+              >
+            </a>
+            <a href="#">
+              <i
+                class="material-icons tooltipped"
+                data-position="bottom"
+                data-tooltip="Notifications"
+                >notifications</i
+              >
+            </a>
+            <a href="#">
+              <img src="./icons/avatar.png" alt="avatar" class="avatar" />
+            </a>
+          </div>
         </div>
       </div>
 
       <section class="categories">
-        <button class="categories-tag active">All</button>
-        <button class="categories-tag">Mixes</button>
-        <button class="categories-tag">Music</button>
-        <button class="categories-tag">Jazz</button>
-        <button class="categories-tag">Sonatas</button>
-        <button class="categories-tag">Latin Jazz</button>
-        <button class="categories-tag">Chill-out music</button>
-        <button class="categories-tag">Beethoven</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-        <button class="categories-tag">Other</button>
-
+        <div class="categories-inner-container">
+          <a class="categories-tag active">All</a>
+          <a class="categories-tag">Mixes</a>
+          <a class="categories-tag">Music</a>
+          <a class="categories-tag">Jazz</a>
+          <a class="categories-tag">Sonatas</a>
+          <a class="categories-tag">Latin Jazz</a>
+          <a class="categories-tag">Chill-out music</a>
+          <a class="categories-tag">Beethoven</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+          <a class="categories-tag">Other</a>
+        </div>
       </section>
     </header>
 
     <aside class="sidebar">
-      <div class="sidebar__container sidebar__icon sidebar__active">
-        <i class="material-icons">home</i>
-        <p>Home</p>
+      <div class="sidebar__section">
+        <div class="sidebar__container sidebar__icon sidebar__active">
+          <i class="material-icons">home</i>
+          <p>Home</p>
+        </div>
+        <div class="sidebar__container sidebar__icon">
+          <i class="material-icons">explore</i>
+          <p>Explore</p>
+        </div>
+        <div class="sidebar__container sidebar__icon">
+          <i class="material-icons">subscriptions</i>
+          <p>Subscriptions</p>
+        </div>
       </div>
-      <div class="sidebar__container sidebar__icon">
-        <i class="material-icons">explore</i>
-        <p>Explore</p>
+      <div class="sidebar__section">
+        <div class="sidebar__container sidebar__icon">
+          <i class="material-icons">video_library</i>
+          <p>Library</p>
+        </div>
+        <div class="sidebar__container sidebar__icon">
+          <i class="material-icons">history</i>
+          <p>History</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">slideshow</i>
+          <p>Your videos</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">watch_later</i>
+          <p>Watch later</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">playlist_play</i>
+          <p>Music</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">keyboard_arrow_down</i>
+          <p>Show more</p>
+        </div>
       </div>
-      <div class="sidebar__container sidebar__icon">
-        <i class="material-icons">subscriptions</i>
-        <p>Subscriptions</p>
+
+      <div class="sidebar__section sidebar__large-screen">
+        <p class="sidebar__section-title">Subscription</p>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <img src="./icons/avatar.png" alt="" class="sidebar__avatar" />
+          <p>coding-guy</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">keyboard_arrow_down</i>
+          <p>Show 5 more</p>
+        </div>
       </div>
-      <div class="sidebar__container sidebar__icon">
-        <i class="material-icons">video_library</i>
-        <p>Library</p>
+
+      <div class="sidebar__section sidebar__large-screen">
+        <p class="sidebar__section-title">More from youtube</p>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">smart_display</i>
+          <p>YouTube Premium</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">sports_esports</i>
+          <p>Gaming</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">sensors</i>
+          <p>Live</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">emoji_events</i>
+          <p>Sports</p>
+        </div>
       </div>
+
+      <div class="sidebar__section sidebar__large-screen">
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">settings</i>
+          <p>Settings</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">flag</i>
+          <p>Report history</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">help</i>
+          <p>Help</p>
+        </div>
+        <div class="sidebar__container sidebar__icon sidebar__large-screen">
+          <i class="material-icons">feedback</i>
+          <p>feedback</p>
+        </div>
+      </div>
+
     </aside>
 
     <section class="videos">
@@ -336,7 +419,426 @@
             </a>
           </div>
         </div>
-
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
+        <div class="videos__card">
+          <div class="videos__card-img-container">
+            <img src="./icons/cat.webp" class="videos__card-img" />
+            <p class="videos__card-time">1:56</p>
+          </div>
+          <div class="videos__card-text-container">
+            <img src="./icons/avatar.png" class="videos__card-avatar" alt="" />
+            <div class="videos__card-info-container">
+              <p class="videos__card-title">Talking to my cat</p>
+              <p class="videos__card-author">coding-guy</p>
+              <div class="videos__card-bottom-container">
+                <p class="videos__card-views">461K views •</p>
+                <p class="videos__card-years">1 years ago</p>
+              </div>
+            </div>
+            <a href="#" class="">
+              <i class="material-icons icon-more">more_vert</i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </body>

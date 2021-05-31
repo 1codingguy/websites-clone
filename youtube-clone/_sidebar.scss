@@ -3,8 +3,19 @@
 .sidebar {
   display: none;
   z-index: 10;
+  height: 100vh;
+  padding-bottom: 56px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 
-  @include mQ($breakpoint-show-sidebar) {
+
+
+  &__large-screen,
+  &__hidden {
+    display: none;
+  }
+
+  @include mQ($breakpoint-show-small-sidebar) {
     width: 72px;
     position: fixed;
     top: 56px;
@@ -15,7 +26,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
+    // align-items: center;
 
     &__container {
       width: 100%;
@@ -40,6 +51,57 @@
     p {
       font-size: 10px;
       font-family: $font-roboto;
+    }
+  }
+
+  @include mQ($breakpoint-show-big-sidebar) {
+    width: 240px;
+    min-height: 100vh;
+    &__large-screen {
+      display: block;
+    }
+
+    &__section {
+      border-bottom: 1px solid lightgray;
+      padding: 1rem 0;
+
+      & > p {
+        font-size: 14px;
+        font-family: $font-roboto;
+        font-weight: 500;
+        text-align: left;
+        padding: 8px 24px;
+        text-transform: uppercase;
+        color: $color-icons-dark;
+      }
+    }
+
+    &__container {
+      // background-color: lightgoldenrodyellow;
+      display: flex;
+      height: 40px;
+      padding: 0 24px;
+      align-items: center;
+
+      i {
+        margin-right: 24px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #030303;
+      }
+    }
+
+    &__active {
+      font-weight: 500;
+      background-color: #e5e5e5;
+    }
+
+    &__avatar {
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 24px;
     }
   }
 }

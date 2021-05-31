@@ -1,25 +1,35 @@
 @import "./variables";
 
 .categories {
-  z-index: 10;
-
-  display: flex;
-  align-items: center;
-  // justify-content: space-evenly;
-  height: 56px;
+  width: 100%;
   border-bottom: 1px solid lightgray;
-  padding-left: 1.5rem;
-  overflow: hidden;
-  max-width: 1488px;
-  justify-self: $breakpoint-categories-max-width;
 
-  @include mQ($breakpoint-show-sidebar) {
-    padding-left: 5rem;
+  &-inner-container{
+    z-index: 10;
+  
+    display: flex;
+    align-items: center;
+    // justify-content: space-evenly;
+    height: 56px;
+    padding-left: 1.5rem;
+    overflow: hidden;
+    max-width: 1488px;
+    justify-self: $breakpoint-categories-max-width;
+  
+    @include mQ($breakpoint-show-small-sidebar) {
+      padding-left: 5rem;
+    }
+    @include mQ($breakpoint-show-big-sidebar) {
+      padding-left: 16rem;
+    }
+  
+    @include mQ($breakpoint-categories-max-width){
+      margin: 0 auto;
+    }
+
+
   }
 
-  @include mQ($breakpoint-categories-max-width){
-    margin: 0 auto;
-  }
 
   &-tag {
     border: 1px solid lightgray;
