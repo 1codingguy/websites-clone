@@ -33,6 +33,16 @@ header {
     padding: 0.5rem;
   }
 
+  .nav__country {
+    position: absolute;
+    top: -8px;
+    right: -23px;
+    font-size: 0.6rem;
+    // color: #909090;
+    color: $color-icons-dark;
+    font-family: $font-default-2;
+  }
+
   .tooltip-icon-youtube {
     position: relative;
     // to make the tooltip container same size as icon-youtube
@@ -41,16 +51,6 @@ header {
     height: 20px;
     margin: auto 1rem;
 
-    span {
-      position: absolute;
-      top: -8px;
-      right: -23px;
-      font-size: 0.6rem;
-      // color: #909090;
-      color: $color-icons-dark;
-      font-family: $font-default-2;
-    }
-    
     // &:hover::before {
     //   z-index: 100;
     //   position: absolute;
